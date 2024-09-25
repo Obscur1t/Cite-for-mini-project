@@ -1,0 +1,27 @@
+.hero {
+    background: url(../assets/hero_section.webp) center no-repeat;
+    height: 650px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 120px;
+    width: 1500px;
+    height: 650px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.5) 100%);
+}
+
+.hero-content-h1 {
+    color: var(--co-white) ;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.hero-content-p {
+    color: var(--co-white);
+    font-size: 45px;
+    font-weight: 700;
+}

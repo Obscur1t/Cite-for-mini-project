@@ -1,0 +1,31 @@
+.tech-content {
+    
+}
+
+.tech-content-h1 {
+    text-align: center;
+    color: var(--co-white);
+    margin: 20px;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.tech-content-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.tech-content-gallery-link {
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px var(--co-black);
+    transition: 0.3s;
+ 
+}
+
+.tech-content-gallery-link:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0), 0 0 10px blueviolet;
+    transform: translateY(-5px);
+  }
+

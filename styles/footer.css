@@ -1,0 +1,50 @@
+.contacts {
+    padding: 55px 20px 63px;
+    text-align: center;
+    background-color: var(--co-black);
+}
+
+.contacts-title {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--co-white);
+}
+
+.social {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.social-icon {
+    width: 65px;
+    height: 65px;
+    fill: var(--co-white);
+    transition: 0.5s;
+}
+
+.yt:hover {
+    fill: #c4302b;
+}
+
+.ld:hover {
+    fill: #0A66C2;
+}
+
+.ig:hover {
+    fill: #833AB4;
+}
+
+.fb:hover {
+    fill: #3b5998;
+}
+
+.contacts-info {
+    margin: 35px 0 0 0;
+    color: var(--co-white);
+    font-size: 30px;
+    font-weight: 700;
+}

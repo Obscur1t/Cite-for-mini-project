@@ -1,6 +1,5 @@
 .header {
     background-color: var(--co-head);
-    box-shadow: 0px 2px 3px var(--co-headline);
 }
 
 .header-wrapper {
@@ -83,7 +82,7 @@
     color: var(--co-white);
     background-color: var(--co-headline);
     margin-right: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: 0.3s;
 }
 
@@ -93,7 +92,7 @@
     font-size: 20px;
     color: var(--co-white);
     background-color: var(--co-headline2);
-    border-radius: 20px;
+    border-radius: 15px;
     transition: 0.3s;
 }
 
