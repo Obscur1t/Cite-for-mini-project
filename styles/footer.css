@@ -48,3 +48,17 @@
     font-size: 30px;
     font-weight: 700;
 }
+
+@media (max-width: 750px) {
+    .contacts {
+        padding: 30px 10px 40px;
+    }
+
+    .contacts-title {
+        font-size: 35px;
+    }
+
+    .contacts-info {
+        font-size: 20px;
+    }
+}

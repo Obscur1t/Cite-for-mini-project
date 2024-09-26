@@ -13,8 +13,8 @@
 
 .project-link {
     color: var(--co-white);
-    font-size: 40px;
-    padding: 25px 80px 25px 80px;
+    font-size: 60px;
+    padding: 35px 80px 35px 80px;
     border: 2px solid black;
     border-radius: 20px;
     box-shadow: 0 0 20px var(--co-black);
@@ -33,4 +33,12 @@
     font-size: 30px;
     margin-top: 50px;
     padding: 30px;
+}
+
+@media (max-width: 750px) {
+    .project-link {
+        font-size: 30px;
+        padding: 20px 50px 20px 50px;
+    } 
+
 }

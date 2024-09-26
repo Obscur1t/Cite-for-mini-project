@@ -29,3 +29,24 @@
     transform: translateY(-5px);
   }
 
+  @media (max-width: 1050px) {
+    .tech-content-gallery-img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .tech-content-h1 {
+        font-size: 45px;
+    }
+  }
+
+@media (max-width: 560px) {
+    .tech-content-h1 {
+        font-size: 35px;
+    }
+
+    .tech-content-gallery-img {
+        width: 155px;
+        height: 155px;
+    }
+}
