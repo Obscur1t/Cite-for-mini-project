@@ -50,3 +50,17 @@
         height: 155px;
     }
 }
+
+@media (max-width: 375px) {
+    .tech-content-gallery-img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 320px) {
+    .tech-content-gallery-img {
+        width: 115px;
+        height: 115px;
+    }
+}

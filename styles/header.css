@@ -154,3 +154,34 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 375px) {
+    .logo {
+        font-size: 35px;
+        margin-left: 25px;
+    }
+
+    .btn--first {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    .btn--second {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 310px) {
+    .btn--first {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .btn--second {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+}

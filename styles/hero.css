@@ -58,3 +58,10 @@
         width: 300px;
     }
 }
+
+@media (max-width: 301px) {
+    .hero-content {
+        width: 250px;
+    }
+    
+}

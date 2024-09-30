@@ -42,3 +42,11 @@
     } 
 
 }
+
+@media (max-width: 500px) {
+    .project-link {
+        font-size: 25px;
+        padding: 12px 35px 12px 35px;
+    }
+    
+}

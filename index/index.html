@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cite for practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favi.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+              
+                <div class="logo">Logo</div>
+
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a href="#about-id" class="header-nav-link">About</a></li>
+                        <li class="header-nav-item"><a href="#tech-id" class="header-nav-link">Technologies</a></li>
+                        <li class="header-nav-item"><a href="#project-id" class="header-nav-link">Mini Projects</a></li>
+                        <li class="header-nav-item"><a href="#contacts" class="header-nav-link">Links</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-btn">
+                    <button type="button" class="btn btn--first" id="register">Sign Up</button>
+                    <button type="button" class="btn btn--second">Sign In</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="about-id">
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1 class="hero-content-h1"> <span id="name-id" class="hero-content-h1-span">Hello</span></h1>
+
+                    <p class="hero-content-p">Disclaimer: this site is for the creator's practice and may not be maintained when I get into commercial development.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tech" id="tech-id">
+            <div class="container">
+                <div class="tech-content">
+                    <h1 class="tech-content-h1">Technologies</h1>
+
+                    <div class="tech-content-gallery">
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/HTML" class="tech-content-gallery-link"><img src="../assets/html_img.webp" alt="Html image" class="tech-content-gallery-img"></a>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/CSS" class="tech-content-gallery-link"><img src="../assets/css_img.webp" alt="CSS image" class="tech-content-gallery-img"></a>
+                    </div>
+                    <div class="tech-content-gallery">
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript" class="tech-content-gallery-link"><img src="../assets/js_img.webp" alt="JavaScript image" class="tech-content-gallery-img"></a>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="tech-content-gallery-link"><img src="../assets/react_img.webp" alt="React JS image" class="tech-content-gallery-img"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project-id">
+            <div class="container">
+                <h1 class="project-h1">Mini Project</h1>
+
+                <a href="../projectsGallery/gallery.html" class="project-link">Catalog projects</a>
+
+                <p class="project-p">
+                    P.S. This button leads to the HTML page with the project catalog.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="contacts" id="contacts">
+        <div class="container">
+
+            <h1 class="contacts-title">Contacts</h1>
+
+            <address class="social" aria-label="social">
+                <a href="https://www.youtube.com" target="_blank" aria-label="link to youtube">
+                    <svg class="social-icon yt" aria-label="youtube-icon">
+                        <use href="../assets/sprite.svg#youtube-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="link to linkedin">
+                    <svg class="social-icon ld" aria-label="linkedin-icon">
+                        <use href="../assets/sprite.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="link to instagram">
+                    <svg class="social-icon ig" aria-label="instagram-icon">
+                        <use href="../assets/sprite.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="link to facebook">
+                    <svg class="social-icon fb" aria-label="facebook-icon">
+                        <use href="../assets/sprite.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+            </address>
+
+            <p class="contacts-info" aria-label="contacts info">@More works you can see in these social networks.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+.header {
+    background-color: var(--co-head);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    color: white;
+}
+
+.logo {
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.45s;
+    backface-visibility: hidden;
+    cursor: default;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 2px;
+}
+
+.header-cloaks-p {
+    color: white;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.header-cloaks {
+    background-color: rgba(46, 39, 54, 0.45);
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+.header-cloaks:hover {
+    box-shadow: 0 0 10px white;
+    color: black;
+    background-color: white;
+}
+
+.header-cloaks-p:hover {
+    color: black;
+    cursor: default;
+}
+
+
+@media (max-width: 350px) {
+    .header-cloaks-p {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+
+}
