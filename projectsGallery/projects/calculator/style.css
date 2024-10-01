@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(17, 16, 20);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.btn-div {
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    align-items: center;
+    background-color: black;
+    padding: 30px 100px 90px 100px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.inp1, .inp2 {
+    width: 350px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.plus, .minus, .mult, .division {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    transition: 0.15s;
+}
+
+.division {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    transition: 0.15s;
+}
+
+.result {
+    width: 340px;
+    height: 75px;
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    border: none;
+    transition: 0.15s;
+}
+
+.resultText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 75px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.calculator-p {
+    color: white;
+    padding: 1px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.plus:hover, .minus:hover, .mult:hover, .division:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+.plus:active, .minus:active, .mult:active, .division:active {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(0.9);
+}
+
+.result:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+}
+
+.result:active {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(0.9);
+}
+
+@media (max-width:600px) {
+    .container {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+
+    .content {
+        max-width: 300px;
+        padding: 15px 30px 50px 30px;
+    }
+
+    .inp1, .inp2, .result, .resultText {
+        max-width: 250px;
+    }
+}

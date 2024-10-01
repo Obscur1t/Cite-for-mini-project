@@ -28,12 +28,11 @@ const projList = document.querySelector('#project-list');
 function addProj(name, url) {
     // projList.innerHTML = `<a target="_blank" class="project-list-element" href="${url}">${name}</a>`;
     
-    projList.insertAdjacentHTML("beforeend",`<a target="_blank" class="project-list-element" href="${url}">${name}</a>`)
+    projList.insertAdjacentHTML("beforeend",`<a class="project-list-element" href="${url}">${name}</a>`)
 }
 
-addProj('Test link', '')
-addProj('Test link', '')
-addProj('Test link', '')
+addProj('Calculator', 'projects/calculator/index.html')
+
 
 
 
