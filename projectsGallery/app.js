@@ -33,6 +33,7 @@ function addProj(name, url) {
 
 addProj('Calculator', 'projects/calculator/index.html')
 addProj('Timer', 'projects/timer/index.html')
+addProj('Todo list', 'projects/todo/index.html')
 
 
 

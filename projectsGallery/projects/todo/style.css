@@ -1,0 +1,215 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(17, 16, 20);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 50px;
+    gap: 50px;
+    background-color: black;
+    width: 900px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px black;
+}
+
+.inp {
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.addTask {
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.15s;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.todo-list-element {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.todo-p {
+    width: 280px;
+    font-weight: 900;
+}
+
+.todo-btn {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: 700;
+    border: none;
+    transition: 0.2s;
+}
+
+.todo-span-btn {
+}
+
+.addTask:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px white;
+    text-shadow: 0 0 5px white;
+}
+
+.addTask:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(0.8);
+}
+
+.inp:focus {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px white;
+    text-shadow: 10px;
+}
+
+.todo-btn:first-child {
+    background-color: rgb(172, 255, 47);
+}
+
+.todo-btn:nth-child(2) {
+    background-color: red;
+}
+
+.todo-btn:first-child:hover, .todo-btn:nth-child(2):hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.todo-btn:first-child:active, .todo-btn:nth-child(2):active {
+    transform: scale(1.2);
+}
+
+@media (max-width:750px) {
+    .content {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .inp {
+        width: 300px;
+        height: 50px;
+        width: 300px;
+    }
+
+    .addTask {
+        width: 250px;
+    }
+
+    .todo-list-element {
+        padding: 10px;
+        margin: 10px;
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .todo-btn {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    .todo-p {
+        width: 175px;
+    }
+
+    .todo-btn:first-child:hover, .todo-btn:nth-child(2):hover {
+        color: black;
+        box-shadow: none;
+    }
+
+    .todo-btn:first-child:hover {
+        background-color: greenyellow;
+    }
+
+    .todo-btn:nth-child(2):hover {
+        background-color: red;
+    }
+
+    .todo-btn:first-child:active, .todo-btn:nth-child(2):active {
+        transform: scale(1.2);
+        background-color: black;
+        color: white;
+    }
+
+    .addTask:hover {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .addTask:active {
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 20px white;
+        text-shadow: 0 0 5px white;
+    }
+}
+
+@media (max-width:375px) {
+    .inp {
+        width: 250px;
+        height: 40px;
+    }
+
+    .addTask {
+        width: 200px;
+        height: 50px;
+    }
+
+    .content {
+        margin: 10px;
+        padding: 20px 10px 10px 10px;
+    }
+}
