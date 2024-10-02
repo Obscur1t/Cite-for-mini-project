@@ -60,5 +60,17 @@
         padding: 15px;
     }
 
+    .header-cloaks:hover {
+        box-shadow: 0 0 10px black;
+        color: white;
+        background-color: rgba(46, 39, 54, 0.45);
+    }
+
+    .header-cloaks:active {
+        box-shadow: 0 0 10px white;
+        color: black;
+        background-color: white;
+    }
+
 
 }

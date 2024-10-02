@@ -126,16 +126,52 @@ body {
 
 @media (max-width:600px) {
     .container {
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        gap: 5px;
     }
 
     .content {
         max-width: 300px;
         padding: 15px 30px 50px 30px;
+        margin: 10px 0 0;
+        gap: 20px;
     }
 
     .inp1, .inp2, .result, .resultText {
         max-width: 250px;
     }
+
+    .btn-div {
+        gap: 10px;
+    }
+
+    .plus:hover, .minus:hover, .mult:hover, .division:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+    }
+
+    .plus:active, .minus:active, .mult:active, .division:active {
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 10px white;
+        cursor: pointer;
+    }
+
+    .result:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 20px black;
+        cursor: pointer;
+    }
+
+    .result:active {
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 20px white;
+        cursor: pointer;
+    }
+
 }

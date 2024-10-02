@@ -45,6 +45,21 @@
         margin: 15px;
     }
 
+    .project-list-element:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .project-list-element:active {
+        color: black;
+        background-color: rgba(255, 255, 255);
+        box-shadow: 0 0 1px white;
+        text-shadow: 0 0 10px black;
+    }
+
+
 }
 
 @media (max-width: 350px) {

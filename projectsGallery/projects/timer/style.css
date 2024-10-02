@@ -1,0 +1,133 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(17, 16, 20);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.content {
+    background-color: black;
+    max-width: 800px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    box-shadow: 0 0 20px black;
+    justify-content: center;
+}
+
+.btn-div {
+    margin: 30px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.timer {
+    margin: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    box-shadow: 0 0 15px white;
+    padding: 25px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.start, .pause, .reset {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px white;
+    transition: 0.3s;
+}
+
+.timer:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 25px white, 0 30px 30px white;
+    text-shadow: 0 0 7px white;
+}
+
+.start:hover, .pause:hover, .reset:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px white, 0 15px 20px white;
+    text-shadow: 0 0 4px white;
+    cursor: pointer;
+}
+
+.start:active, .pause:active, .reset:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width:550px) {
+    .start:hover, .pause:hover, .reset:hover {
+        background-color: white;
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        font-weight: 700;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 0 10px white;
+        transition: 0.3s;
+        color: black;
+    }
+
+    .start:active, .pause:active, .reset:active {
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 20px white, 0 15px 20px white;
+        text-shadow: 0 0 4px white;
+        cursor: pointer;
+    }
+
+    .timer {
+        margin: 30px;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .content {
+        max-width: 300px;
+        padding: 12px 12px 120px 12px;
+        margin: 10px;
+    }
+
+    .btn-div {
+        margin: 20px;
+        width: 250px;
+        height: 50px;
+        gap: 30px;
+    }  
+
+    .start, .pause, .reset {
+        width: 60px;
+        height: 40px;
+        font-size: 18px;
+        font-size: 15px;
+    }
+}
