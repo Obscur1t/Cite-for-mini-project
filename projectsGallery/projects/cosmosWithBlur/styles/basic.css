@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+.container {
+    background: url(../assets/i.webp) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 1400px;
+    height: 85%;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 2px solid rgba(211, 211, 211, 0.19);
+    backdrop-filter: blur(10px);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
