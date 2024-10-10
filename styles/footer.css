@@ -22,7 +22,7 @@
 .social-icon {
     width: 65px;
     height: 65px;
-    fill: var(--co-white);
+    fill: white;
     transition: 0.5s;
 }
 

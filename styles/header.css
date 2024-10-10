@@ -1,5 +1,6 @@
 .header {
-    background-color: var(--co-head);
+    background-color: rgb(27, 26, 29);
+    transition: 0.3s;
 }
 
 .header-wrapper {
@@ -26,7 +27,6 @@
 }
 
 .header-nav {
-
 }
 
 .header-nav-list {
@@ -45,6 +45,7 @@
 .header-nav-link {
     position: relative;
     transition: 0.3s;
+    letter-spacing: 2px;
 }
 
 .header-nav-link:after {
@@ -68,11 +69,16 @@
 }
 
 .header-nav-link:hover {
-    text-shadow: 0px 0px 3px;
+    text-shadow: 0px 0px 10px rebeccapurple, 2px 2px 2px black;
+
 }
 
 .header-btn {
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .btn--first {
@@ -104,6 +110,22 @@
 .btn--second:hover {
     box-shadow: 0px 0px 8px var(--co-white);
     text-shadow: 0px 0px 1px;
+}
+
+.header-sun-img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 10px white;
+    transition: 0.2s;
+}
+
+.header-sun-img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 17px white;
+    transform: scale(1.12);
 }
 
 

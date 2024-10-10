@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: var(--co-backgd);
+    background-color: rgb(44, 42, 46);
     margin: 0;
     font-family: "Roboto", sans-serif
 }
