@@ -1,4 +1,6 @@
 @import url(../styles/basic.css);
+@import url(styles/basic.css);
 @import url(../styles/variables.css);
 @import url(../projectsGallery/styles/header.css);
 @import url(../projectsGallery/styles/projects-list.css);
+@import url(../projectsGallery/styles/lightTheme.css);

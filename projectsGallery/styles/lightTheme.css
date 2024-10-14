@@ -1,0 +1,50 @@
+.light-body {
+    background-color: rgb(210, 210, 210);
+} 
+
+.light-header {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.light-header-logo {
+    color: black;
+}
+
+.light-sun-btn {
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+.light-sun-btn:hover {
+    box-shadow: 0 0 20px black;
+}
+
+.light-cloak {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10 px black;
+}
+
+.light-cloak:hover {
+    box-shadow: 0 0 20px black;
+    background-color: black;
+}
+
+.light-cloak-p {
+    color: black;
+}
+
+.light-cloak-p:hover {
+    color: white;
+}
+
+.light-link {
+    background-color: white;
+    color: black
+}
+
+.light-link:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px black;
+}

@@ -25,12 +25,16 @@
     margin-bottom: 40px;
     box-shadow: 0px 0px 20px var(--co-black);
     transition: 0.3s;
- 
+    border-radius: 50px;
+}
+
+.tech-content-gallery-img {
+    border-radius: 50px;
 }
 
 .tech-content-gallery-link:hover{
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0), 0 0 10px blueviolet;
-    transform: translateY(-5px);
+    transform: scale(1.05)
   }
 
   @media (max-width: 1050px) {

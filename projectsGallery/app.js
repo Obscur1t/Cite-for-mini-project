@@ -1,6 +1,8 @@
+
+
 ////////// Cloaks code 
 
-const cloak = document.querySelector('#header-cloak');
+const cloak = document.querySelector('#header-cloaks');
 const cloakPar = document.querySelector('#header-cloaks-p');
 
 function update() {
@@ -26,14 +28,38 @@ const cloakInt = setInterval(() => {
 const projList = document.querySelector('#project-list');
 
 function addProj(name, url) {
-    // projList.innerHTML = `<a target="_blank" class="project-list-element" href="${url}">${name}</a>`;
-    
-    projList.insertAdjacentHTML("beforeend",`<a class="project-list-element" href="${url}">${name}</a>`)
+    projList.insertAdjacentHTML("beforeend",`<a id="project-link" class="project-list-element" href="${url}">${name}</a>`)
 }
 
 addProj('Calculator', 'projects/calculator/index.html')
 addProj('Timer', 'projects/timer/index.html')
 addProj('Cosmos(blur)', 'projects/cosmosWithBlur/index.html')
+
+
+////////////// Add light theme
+
+const lightBody = document.querySelector('body');
+const lightHeader = document.querySelector('#header');
+const headerLogo = document.querySelector('#header-logo');
+const changeThemeBtn = document.querySelector('#sun-btn');
+const projectLink = document.querySelectorAll('.project-list-element');
+
+changeThemeBtn.addEventListener('click', () => {
+    lightBody.classList.toggle('light-body');
+    lightHeader.classList.toggle('light-header');
+    headerLogo.classList.toggle('light-header-logo');
+    changeThemeBtn.classList.toggle('light-sun-btn');
+    cloak.classList.toggle('light-cloak')
+    cloakPar.classList.toggle('light-cloak-p')
+
+    projectLink.forEach((el) => {
+        el.classList.toggle('light-link')
+    }) 
+
+
+})
+
+
 
 
 

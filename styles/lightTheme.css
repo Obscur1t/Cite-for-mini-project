@@ -1,22 +1,11 @@
-.light-bc-header {
-    background-color: white;
-}
-
-.light-bc-tech {
-    background-color: white;
-}
-
-.light-bc-project {
-    background-color: white;
-    margin: 0;
-}
-
-.light-bc-footer {
-    background-color: white;
-}
-
 .light-bc-body {
-    background-color: white;
+    background-color: rgb(210, 210, 210);
+}
+
+/* /////////////////////////////Header light theme */
+
+.light-bc-header {
+    background-color: rgb(210, 210, 210);
 }
 
 .light-header-logo {
@@ -39,6 +28,55 @@
 .light-btn {
     box-shadow: 0 0 10px black, 0 0 5px black;
 }
+
 .light-btn:hover {
     box-shadow: 0 0 20px black, 0 0 15px black;
+    transform: scale(1.05);
+}
+
+/* /////////////////////////////Tech light theme */
+
+.light-bc-tech {
+    background-color: rgb(210, 210, 210);
+}
+
+.light-tech-img {
+    box-shadow: 0 0 30px black, 0 0 50px black;
+}
+
+.light-tech-img:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0), 0 0 15px black, 0 0 50px rebeccapurple;
+}
+
+.light-tech-title {
+    color: black;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+/* /////////////////////////////Project light theme */
+
+.light-bc-project {
+    background-color: rgb(140, 140, 140);
+    margin: 0;
+}
+
+.light-project-title {
+    color: black;
+}
+
+.light-project-link {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px white, 0 0 30px white;
+}
+
+.light-project-link:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 20px black, 0 0 40px black;
+}
+
+.light-project-p {
+    color: black;
 }
