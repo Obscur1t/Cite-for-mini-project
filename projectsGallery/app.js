@@ -1,5 +1,3 @@
-
-
 ////////// Cloaks code 
 
 const cloak = document.querySelector('#header-cloaks');
@@ -34,6 +32,7 @@ function addProj(name, url) {
 addProj('Calculator', 'projects/calculator/index.html')
 addProj('Timer', 'projects/timer/index.html')
 addProj('Cosmos(blur)', 'projects/cosmosWithBlur/index.html')
+addProj('Users list(basic fetch)', 'projects/fetch, async/index.html')
 
 
 ////////////// Add light theme
@@ -62,5 +61,6 @@ changeThemeBtn.addEventListener('click', () => {
 
 
 
+console.log(active);
 
 

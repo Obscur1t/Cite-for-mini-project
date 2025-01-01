@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.users-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.user-element {
+    background-color: rgb(165, 165, 165);
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    padding: 15px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.user-element:hover {
+    background-color: rgb(15, 15, 15);
+    border: 1px solid white;
+    box-shadow: 0 0 15px rebeccapurple;
+    color: white;
+    transition: 0.3s;
+    border-radius: 15px;
+    transform: scale(1.05);
+    .user-element-info {
+        color: white;
+    }
+}
+
+.user-element-photo {
+
+}
+
+.user-element-info {
+    text-align: center;
+    color: white;
+    color:black;
+    font-weight: 700;
+}
+
+.user-element-info_name {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.user-element-extra-info {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-element-email {
+
+}
+
+.user-element-phone {
+
+}
+
+.user-element-company {
+
+}
