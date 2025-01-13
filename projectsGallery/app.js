@@ -33,6 +33,7 @@ addProj('Calculator', 'projects/calculator/index.html')
 addProj('Timer', 'projects/timer/index.html')
 addProj('Cosmos(blur)', 'projects/cosmosWithBlur/index.html')
 addProj('Users list(basic fetch)', 'projects/fetch, async/index.html')
+addProj('Basic todo', 'projects/Basic todo/index.html')
 
 
 ////////////// Add light theme

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <button class="add-btn">Add task</button>
+            <input type="text" placeholder="Search your task" class="input-search">
+        </div>
+    </header>
+
+    <div class="overlay hidden"></div>
+
+    <main>
+        <section class="modal"> 
+            <div class="modal-window hidden">
+                <input type="text" class="modal-input_name" placeholder="Type todo name">
+                <textarea name="" id="" class="modal-input_description" placeholder="Type todo description"></textarea>
+                <div class="modal-btn">
+                    <button class="modal-btn_close">Close</button>
+                    <button class="modal-btn_add">Add</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <div class="tasks-list"></div>
+        </section>
+
+        <section class="modal-task"> 
+            <div class="modal-task-window hidden">
+                <div class="modal-task-content">
+                    <h1 class="modal-task-title"></h1>
+                    <p class="modal-task-description"></p>
+                    <button class="modal-task-close_btn">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
