@@ -4,14 +4,14 @@ const overlay = document.querySelector('.overlay');
 const taskList = document.querySelector('.tasks-list');
 const modalTask = document.querySelector('.modal-task-window');
 
-const TASKS = [];
+let TASKS = [];
 
 const createTaskHTML = (taskName, taskDescription) => {
     const taskHTML = document.createElement('div');
     taskHTML.className = 'task-block';
 
     const task = document.createElement('div');
-    task.className = 'task'
+    task.className = 'task';
     
     const taskNameHTML = document.createElement('h1');
     taskNameHTML.className = 'task-name';
@@ -23,11 +23,11 @@ const createTaskHTML = (taskName, taskDescription) => {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'task-delete_btn';
-    deleteBtn.innerHTML = 'Delete'
+    deleteBtn.textContent = 'Delete';
 
     task.append(taskNameHTML, taskDescriptionHTML);
-    taskHTML.append(task, deleteBtn)
-    return taskHTML
+    taskHTML.append(task, deleteBtn);
+    return taskHTML;
 }
 
 TASKS.forEach((task) => {
@@ -36,14 +36,14 @@ TASKS.forEach((task) => {
 
 const deleteDOMElement = (elem) => {
     if (elem) {
-        elem.remove()
+        elem.remove();
     } 
 }
 
 const createErrorBlock = (message) => {
     const spanError = document.createElement('span');
     spanError.className = 'error-block';
-    spanError.innerText = message;
+    spanError.textContent = message;
     return spanError;
 }
 
@@ -73,7 +73,7 @@ modalWindow.addEventListener('click', (event) => {
     const modalAddBtn = target.closest('.modal-btn_add');
     const spanError = document.querySelector('.error-block')
     const taskFind = TASKS.some((elem) => {
-        return elem.name == modalTaskName.value; 
+        return elem.name === modalTaskName.value; 
     })
     
     if (modalCloseBtn) {
@@ -114,6 +114,8 @@ taskList.addEventListener('click', (event) => {
     const deleteBtn = target.closest('.task-delete_btn')
 
     if (deleteBtn) {
+        const taskName = taskNameHTML.textContent;
+        TASKS = TASKS.filter(task => task.name !== taskName);
         deleteDOMElement(taskBlock);
     }
 
